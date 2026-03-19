@@ -55,8 +55,8 @@ We'll be back soon with a smoother experience.
 <script>
 // Target: 2026-04-16 18:00:00 Myanmar Time (UTC+6:30)
 // This equals 2026-04-16 11:30:00 UTC
-var countDownDate = Date.UTC(2026, 3, 16, 11, 30, 0); // months are 0‑based: 3 = April
-
+//var countDownDate = Date.UTC(2026, 3, 16, 11, 30, 0); // months are 0‑based: 3 = April
+var countDownDate = new Date("2026-04-16T18:00:00+06:30").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime(); // current time in milliseconds since epoch (UTC)
   var distance = countDownDate - now;
